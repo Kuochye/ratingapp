@@ -1,0 +1,126 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery-2.2.4.min.js"></script>
+<script src="jquery.cookie.js"></script>
+<script>
+/*
+$(document).ready(function(){
+	$('#excellent').click(function(){
+		document.getElementById("voting").innerHTML = "Thank you for rating!";
+	$('#voting').show();
+	setTimeout(fade_out, 3000);
+
+	function fade_out() {
+	$("#voting").fadeOut();
+	}
+	});
+});
+*/
+
+$(document).ready(function(){
+
+	var parseInt(cookieValue) = ($.cookie('ename'));
+	document.getElementById("eresult").innerHTML = cookieValue;
+		
+	
+});
+</script>
+</head>
+<body>
+	<div id="box">
+		
+		<div id="header">
+			<p id="greeting">Thank you for visiting! <br/>Please rate your experience</p>
+			<input id="rbu" type="image" src="smile.png" width="50" height="50">
+		</div>
+
+		<div id="rating-row">
+
+		<input id="excellent" type="image" src="smile.png" name="image" width="150" height="150">
+		<input id="good" type="image" src="smile.png" name="image" width="150" height="150">
+		<input id="average" type="image" src="smile.png" name="image" width="150" height="150">
+		<input id="poor" type="image" src="smile.png" name="image" width="150" height="150">
+		<input id="verypoor" type="image" src="smile.png" name="image" width="150" height="150">
+		
+		</div>
+
+		<div id="footer">
+			<p id="voting"></p>
+		</div>
+		
+		<div id="results">
+			<span id="eresult">0</span>|
+			<span id="gresult">0</span>|
+			<span id="aresult">0</span>|
+			<span id="presult">0</span>|
+			<span id="vpresult">0</span>
+		</div>
+	</div>
+	
+<script>
+$(document).ready(function(){
+$('#excellent').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("eresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("eresult").innerHTML = newValue;
+		
+		$.cookie('ename', newValue, { expires : 5 });
+    });
+	
+	$('#good').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("gresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("gresult").innerHTML = newValue;
+    });
+	
+	$('#average').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("aresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("aresult").innerHTML = newValue;
+    });
+	
+	$('#poor').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("presult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("presult").innerHTML = newValue;
+    });
+	
+	$('#verypoor').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+    });
+	
+	$("#rbu").click(function () {
+        $("#results").toggle();
+    });
+});
+</script>
+</body>
+</html>
