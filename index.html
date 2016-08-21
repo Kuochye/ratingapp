@@ -75,6 +75,7 @@ $('#excellent').click(function() {
 		var value = document.getElementById("eresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
 		document.getElementById("eresult").innerHTML = newValue;
+		alert("Thank you for voting!");
 		sessionStorage.setItem("ename", newValue);
 		/*$.cookie('ename', newValue, { expires : 5 });*/
     });
