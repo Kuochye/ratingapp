@@ -38,6 +38,7 @@ body{
 #rating-row{
 	height: 30%;
 	margin-top: 50px;
+	font-family: custom;
 }
 
 #rating-row input{
