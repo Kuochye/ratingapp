@@ -38,7 +38,12 @@ body{
 #rating-row{
 	height: 30%;
 	margin-top: 50px;
+}
+
+#qn1{
 	font-family: custom;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 #rating-row input{
