@@ -4,7 +4,9 @@
 }
 
 body{
-   overflow: hidden;	
+   overflow: hidden;
+   background-image: url("background.img");
+   background-size: 1024px 768px;
 }
 
 #box {
