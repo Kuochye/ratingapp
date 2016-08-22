@@ -60,7 +60,7 @@ $(document).ready(function(){
 		<div id="rating-row3" class="ratings">
 			<span class="qn" id="qn3">Question 3: Did you learn more about healthcare today?<br/></span>
 				<div id="last-row">
-					<input id="excellent" type="image" src="excellent.png" name="image" width="120" height="120">
+					<input id="excellent1" type="image" src="excellent.png" name="image" width="120" height="120">
 					<input id="good" type="image" src="good.png" name="image" width="120" height="120">
 					<input id="average" type="image" src="fair.png" name="image" width="120" height="120">
 					<input id="poor" type="image" src="poor.png" name="image" width="120" height="120">
@@ -112,7 +112,7 @@ $(document).ready(function(){
 	document.getElementById("eresult").innerHTML = parseInt(ecount);*/
 	
 	
-	$('#excellent').click(function() {
+	$('#excellent1').click(function() {
         $("#voting").text("Thank you for rating!")
                     .show()
                     .delay(500)
@@ -122,6 +122,7 @@ $(document).ready(function(){
 		var newValue = parseInt(value,10) + 1;
 		document.getElementById("eresult").innerHTML = newValue;
 		sessionStorage.setItem("ename", newValue);
+		alert("Thank you for voting!")
 		/*$.cookie('ename', newValue, { expires : 5 });*/
     });
 	
