@@ -1,0 +1,184 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery-2.2.4.min.js"></script>
+<script src="jquery.cookie.js"></script>
+<script>
+/*
+$(document).ready(function(){
+	$('#excellent').click(function(){
+		document.getElementById("voting").innerHTML = "Thank you for rating!";
+	$('#voting').show();
+	setTimeout(fade_out, 3000);
+
+	function fade_out() {
+	$("#voting").fadeOut();
+	}
+	});
+});
+*/
+
+/* $(document).ready(function(){
+
+	var parseInt(cookieValue) = ($.cookie('ename'));
+	document.getElementById("eresult").innerHTML = cookieValue;
+		
+	
+}); */
+
+</script>
+</head>
+<body>
+	<div id="box">
+		
+		<div id="header">
+			<p id="greeting">Thank you for visiting! <br/>Please rate your experience</p>
+			<input id="rbu" type="image" src="Logo.jpg" name="image" width="150" height="150" >
+		</div>
+		
+		<div id="rating-row1" class="ratings">
+			<span class="qn" id="qn1">Question 1: Did you like Halo?<br/></span>
+				<div id="rating-row">
+					<input id="excellent" type="image" src="excellent.png" name="image" width="120" height="120">
+					<input id="good" type="image" src="good.png" name="image" width="120" height="120">
+					<input id="average" type="image" src="fair.png" name="image" width="120" height="120">
+					<input id="poor" type="image" src="poor.png" name="image" width="120" height="120">
+					<input id="verypoor" type="image" src="verypoor.png" name="image" width="120" height="120">
+				</div>
+		</div>
+		
+		<div id="rating-row2" class="ratings">
+			<span class="qn" id="qn2">Question 2: Which game did you like the most?<br/></span>
+				<div id="game-row">
+					<input id="game1" type="image" src="scrub.png" name="image" width="170" height="120">
+					<input id="game2" type="image" src="sling.png" name="image" width="250" height="120">
+					<input id="game3" type="image" src="square.png" name="image" width="180" height="120">
+					<input id="game4" type="image" src="ward.png" name="image" width="150" height="120">
+				</div>
+		</div>
+		
+		<div id="rating-row3" class="ratings">
+			<span class="qn" id="qn3">Question 3: Did you learn more about healthcare today?<br/></span>
+				<div id="last-row">
+					<input id="excellent" type="image" src="excellent.png" name="image" width="120" height="120">
+					<input id="good" type="image" src="good.png" name="image" width="120" height="120">
+					<input id="average" type="image" src="fair.png" name="image" width="120" height="120">
+					<input id="poor" type="image" src="poor.png" name="image" width="120" height="120">
+					<input id="verypoor" type="image" src="verypoor.png" name="image" width="120" height="120">
+				</div>
+		</div>
+		
+		<div id="footer">
+			<p id="voting"></p>
+		</div>
+		
+		<div id="results">
+			<span id="eresult">0</span>|
+			<span id="gresult">0</span>|
+			<span id="aresult">0</span>|
+			<span id="presult">0</span>|
+			<span id="vpresult">0</span>
+		</div>
+	</div>
+	
+<script>
+	
+$(document).ready(function(){
+	$("#rating-row2 input").prop('disabled', true).css('opacity',0.5);
+	$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
+	
+	$('#rating-row1 input').dblclick(function(e){ 
+    e.preventDefault();
+	});
+	
+	$('#rating-row1 input').click(function(){
+		$("#rating-row1 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row2 input").prop('disabled', false).css('opacity',"");
+	});
+	
+	$('#rating-row2 input').click(function(){
+		$("#rating-row1 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row2 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row3 input").prop('disabled', false).css('opacity',"");
+	});
+	
+	$('#rating-row3 input').click(function(){
+		$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row2 input").prop('disabled', true).css('opacity',0.5);
+		$("#rating-row1 input").prop('disabled', false).css('opacity',"");
+	});
+	/*var ecount = sessionStorage.getItem("ename");
+	document.getElementById("eresult").innerHTML = parseInt(ecount);*/
+	
+	
+	$('#excellent').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+		
+		var value = document.getElementById("eresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("eresult").innerHTML = newValue;
+		sessionStorage.setItem("ename", newValue);
+		/*$.cookie('ename', newValue, { expires : 5 });*/
+    });
+	
+	$('#good').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("gresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("gresult").innerHTML = newValue;
+		sessionStorage.setItem("gname", newValue);
+    });
+	
+	$('#average').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("aresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("aresult").innerHTML = newValue;
+		sessionStorage.setItem("aname", newValue);
+    });
+	
+	$('#poor').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("presult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("presult").innerHTML = newValue;
+		sessionStorage.setItem("pname", newValue);
+    });
+	
+	$('#verypoor').click(function() {
+        $("#voting").text("Thank you for rating!")
+                    .show()
+                    .delay(500)
+                    .fadeOut();
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+	
+	$("#rbu").click(function () {
+        $("#results").toggle();
+    });
+});
+
+
+</script>
+</body>
+</html>

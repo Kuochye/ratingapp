@@ -1,0 +1,74 @@
+@font-face {
+    font-family: custom;
+    src: url(adamcg.otf);
+}
+
+html{
+   background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+   overflow: hidden;
+}
+
+#box {
+	/* basics */
+    text-align: center;
+	margin: 0 auto;	
+	width: 100%;
+}
+
+#header{
+	font-size: 4vw;
+	font-family: custom;
+	position: relative;
+}
+
+#rbu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#rating-row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#rating-row input{
+	margin-right: 40px;
+}
+
+#game-row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#game-row input{
+	margin-right: 40px;
+}
+
+#last-row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#last-row input{
+	margin-right: 40px;
+}
+
+.qn{
+	font-family: custom;
+	text-align: center;	
+}
+
+#footer{
+	font-size: 4vw;
+	font-family: custom;
+}	
+
+#results{
+}
