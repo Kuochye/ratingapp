@@ -34,8 +34,8 @@ body{
 }
 
 #rating-row{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #rating-row input{
@@ -43,8 +43,8 @@ body{
 }
 
 #game-row{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #game-row input{
@@ -52,8 +52,8 @@ body{
 }
 
 #last-row{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #last-row input{
