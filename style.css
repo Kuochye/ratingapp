@@ -5,11 +5,12 @@
 
 html{
    background: url("background.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-   background-size: cover;
+  -webkit-background-size: 1131px 800px;
+  -moz-background-size: 1131px 800px;
+  -o-background-size: 1131px 800px;
+   background-size: 1131px 800px;
 }
+
 body{
    overflow: hidden;
 }
