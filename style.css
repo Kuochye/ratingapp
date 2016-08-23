@@ -5,10 +5,10 @@
 
 html{
    background: url("background.jpg") no-repeat center center fixed; 
-  -webkit-background-size: 1131px 800px;
-  -moz-background-size: 1131px 800px;
-  -o-background-size: 1131px 800px;
-   background-size: 1131px 800px;
+  -webkit-background-size: 990px 700px;
+  -moz-background-size: 990px 700px;
+  -o-background-size: 990px 700px;
+   background-size: 990px 700px;
 }
 
 body{
