@@ -67,37 +67,71 @@ $(document).ready(function(){
 		document.getElementById("vpresult").innerHTML = newValue;
 		sessionStorage.setItem("vpname", newValue);
     });
-    
-	$('.final').click(function(){
-	alert("Thank you for voting!")	
-    });
-    
-	$('#final1').click(function() {
-					
-		
-    });
-    
-    	$('#final2').click(function() {
-					
-		
-    });
-    	
-    	$('#final3').click(function() {
-					
-		
-    });
-    
-    	$('#final4').click(function() {
-					
-		
-    });
-    
-    	$('#final5').click(function() {
-					
-		
-    });
-    
+	
 	$("#rbu").click(function () {
-        $("#results").toggle();
+        $("#overall").toggle();
+    });
+	
+	$('#game1').click(function() {
+					
+		var value = document.getElementById("ga1").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("ga1").innerHTML = newValue;
+    });
+	
+	$('#game2').click(function() {
+					
+		var value = document.getElementById("ga2").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("ga2").innerHTML = newValue;
+    });
+	
+	$('#game3').click(function() {
+					
+		var value = document.getElementById("ga3").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("ga3").innerHTML = newValue;
+    });
+	
+	$('#game4').click(function() {
+					
+		var value = document.getElementById("ga4").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("ga4").innerHTML = newValue;
+    });
+	
+	$('#last1').click(function() {
+					
+		var value = document.getElementById("la1").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("la1").innerHTML = newValue;
+    });
+	
+	$('#last2').click(function() {
+					
+		var value = document.getElementById("la2").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("la2").innerHTML = newValue;
+    });
+	
+	$('#last3').click(function() {
+					
+		var value = document.getElementById("la3").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("la3").innerHTML = newValue;
+    });
+	
+	$('#last4').click(function() {
+					
+		var value = document.getElementById("la4").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("la4").innerHTML = newValue;
+    });
+	
+	$('#last5').click(function() {
+					
+		var value = document.getElementById("la5").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("la5").innerHTML = newValue;
     });
 });
