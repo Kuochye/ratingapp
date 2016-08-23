@@ -2,10 +2,6 @@ $(document).ready(function(){
 	$("#rating-row2 input").prop('disabled', true).css('opacity',0.5);
 	$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
 	
-	$('#rating-row1 input').dblclick(function(e){ 
-    e.preventDefault();
-	});
-	
 	$('#rating-row1 input').click(function(){
 		$("#rating-row1 input").prop('disabled', true).css('opacity',0.5);
 		$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
