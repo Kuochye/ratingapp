@@ -26,13 +26,13 @@ $(document).ready(function(){
 	/*var ecount = sessionStorage.getItem("ename");
 	document.getElementById("eresult").innerHTML = parseInt(ecount);*/
 	
-	
-	$('#excellent1').click(function() {
-        $("#voting").text("Thank you for rating!")
+	/*$("#voting").text("Thank you for rating!")
                     .show()
                     .delay(500)
-                    .fadeOut();
-		
+                    .fadeOut();*/
+					
+	$('#excellent1').click(function() {
+
 		var value = document.getElementById("eresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
 		document.getElementById("eresult").innerHTML = newValue;
@@ -41,10 +41,6 @@ $(document).ready(function(){
     });
 	
 	$('#good').click(function() {
-        $("#voting").text("Thank you for rating!")
-                    .show()
-                    .delay(500)
-                    .fadeOut();
 					
 		var value = document.getElementById("gresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
@@ -53,10 +49,6 @@ $(document).ready(function(){
     });
 	
 	$('#average').click(function() {
-        $("#voting").text("Thank you for rating!")
-                    .show()
-                    .delay(500)
-                    .fadeOut();
 					
 		var value = document.getElementById("aresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
@@ -65,10 +57,6 @@ $(document).ready(function(){
     });
 	
 	$('#poor').click(function() {
-        $("#voting").text("Thank you for rating!")
-                    .show()
-                    .delay(500)
-                    .fadeOut();
 					
 		var value = document.getElementById("presult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
@@ -77,10 +65,6 @@ $(document).ready(function(){
     });
 	
 	$('#verypoor').click(function() {
-        $("#voting").text("Thank you for rating!")
-                    .show()
-                    .delay(500)
-                    .fadeOut();
 					
 		var value = document.getElementById("vpresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
