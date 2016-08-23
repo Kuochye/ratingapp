@@ -68,6 +68,46 @@ $(document).ready(function(){
 		sessionStorage.setItem("vpname", newValue);
     });
 	
+	$('#final1').click(function() {
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+    
+    	$('#final2').click(function() {
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+    	
+    	$('#final3').click(function() {
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+    
+    	$('#final4').click(function() {
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+    
+    	$('#final5').click(function() {
+					
+		var value = document.getElementById("vpresult").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("vpresult").innerHTML = newValue;
+		sessionStorage.setItem("vpname", newValue);
+    });
+    
 	$("#rbu").click(function () {
         $("#results").toggle();
     });
