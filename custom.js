@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$("#rating-row3 input").prop('disabled', true).css('opacity',0.5);
 		$("#rating-row2 input").prop('disabled', true).css('opacity',0.5);
 		$("#rating-row1 input").prop('disabled', false).css('opacity',"");
+		alert("Thank you for voting!");
 	});
 	/*var ecount = sessionStorage.getItem("ename");
 	document.getElementById("eresult").innerHTML = parseInt(ecount);*/
