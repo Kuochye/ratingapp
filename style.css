@@ -70,5 +70,6 @@ body{
 	font-family: custom;
 }	
 
-#results{
+#overall{
+	margin-right: 100px;
 }
