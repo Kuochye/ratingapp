@@ -27,7 +27,7 @@ $(document).ready(function(){
                     .delay(500)
                     .fadeOut();*/
 					
-	$('#excellent1').click(function() {
+	$('#excellent').click(function() {
 
 		var value = document.getElementById("eresult").innerHTML;
 		var newValue = parseInt(value,10) + 1;
