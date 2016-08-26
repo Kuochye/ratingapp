@@ -100,6 +100,13 @@ $(document).ready(function(){
 		var newValue = parseInt(value,10) + 1;
 		document.getElementById("ga4").innerHTML = newValue;
     });
+    
+    	$('#game5').click(function() {
+					
+		var value = document.getElementById("ga5").innerHTML;
+		var newValue = parseInt(value,10) + 1;
+		document.getElementById("ga5").innerHTML = newValue;
+    });
 	
 	$('#last1').click(function() {
 					
