@@ -23,7 +23,7 @@ body{
 }
 
 #header{
-	font-size: 4vw;
+	font-size: 3.5vw;
 	font-family: custom;
 	position: relative;
 	margin-top: 20px;
@@ -33,6 +33,10 @@ body{
 	position: absolute;
 	top: 0px;
 	right: 0px;
+}
+
+#rating-row1{
+	margin-top: -20px;
 }
 
 #rating-row{
